@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ゲーム|HACO.AR</title>
+    <!--A-frame ライブラリの読み込み-->
+    <script src="./js/aframe-v0.9.0.min.js"></script>
+    <!-- AR.js ライブラリの読み込み-->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <!--aframe-extras-->
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.min.js"></script>
+  </head>
+  <body style='margin:0px; overflow:hidden;'>
+    <a-scene embedded arjs="patternRatio: 0.85; debugUIEnabled:false;" renderer="gammaOutput: true;" vr-mode-ui="enabled: false">
+      <a-assets>
+            <a-asset-item id="normal" src="model-gltf/haco/haco-normal.glb"></a-asset-item>
+
+            <a-asset-item id="ringo" src="model-gltf/haco/haco-ringo.glb"></a-asset-item>
+            <a-asset-item id="ringo-zyaguti" src="model-gltf/haco/ringo-zyaguti.glb"></a-asset-item>
+
+            <a-asset-item id="asi" src="model-gltf/haco/asi.glb"></a-asset-item>
+
+            <a-asset-item id="ana" src="model-gltf/haco/ana.glb"></a-asset-item>
+
+            <a-asset-item id="zyaguti" src="model-gltf/haco/zyaguti.glb"></a-asset-item>
+
+            <a-asset-item id="taiya" src="model-gltf/haco/taiya.glb"></a-asset-item>
+
+            <a-asset-item id="arm" src="model-gltf/haco/arm.glb"></a-asset-item>
+            <a-asset-item id="arm-ana" src="model-gltf/haco/arm-ana.glb"></a-asset-item>
+            <a-asset-item id="arm-asi" src="model-gltf/haco/arm-asi.glb"></a-asset-item>
+
+
+
+            <a-asset-item id="tensi-ana" src="model-gltf/haco/tensi-ana.glb"></a-asset-item>
+            <a-asset-item id="tensi-asi" src="model-gltf/haco/tensi-asi.glb"></a-asset-item>
+            <a-asset-item id="tensi" src="model-gltf/haco/tensib.glb"></a-asset-item>
+
+
+            <a-asset-item id="antena" src="model-gltf/haco/antenab.glb"></a-asset-item>
+            <a-asset-item id="antena-asi" src="model-gltf/haco/antena-asi.glb"></a-asset-item>
+            <a-asset-item id="antena-taiya" src="model-gltf/haco/antena-taiya.glb"></a-asset-item>
+            <a-asset-item id="antena-zyaguti" src="model-gltf/haco/antena-zyaguti.glb"></a-asset-item>
+
+            <a-asset-item id="kuki" src="model-gltf/haco/kuki.glb"></a-asset-item>
+            <a-asset-item id="kuki-asi" src="model-gltf/haco/kuki-asi.glb"></a-asset-item>
+
+            <a-asset-item id="ongaku" src="model-gltf/haco/ongaku.glb"></a-asset-item>
+            <a-asset-item id="ongaku-asi" src="model-gltf/haco/ongaku-asib.glb"></a-asset-item>
+      </a-assets>
+
+      <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-normal.patt'>
+        <a-entity gltf-model="#normal" scale="8 8 8" position="0 0 0" rotation="0 0 0"
+            animation-mixer="loop:repeat; timeScale:1.7">
+         </a-entity>
+       </a-marker>
+
+
+        <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-ringo.patt'>
+              <a-entity gltf-model="#ringo" scale="8 8 8" position="0 0 0" rotation="0 0 0"
+                  animation-mixer="loop:repeat; timeScale:1.7">
+         </a-entity>
+       </a-marker>
+       <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-ringo-zyaguti.patt'>
+             <a-entity gltf-model="#ringo-zyaguti" scale="8 8 8" position="0 0 0" rotation="0 0 0"
+                 animation-mixer="loop:repeat; timeScale:1.7">
+        </a-entity>
+       </a-marker>
+
+       <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-zyaguti.patt'>
+             <a-entity gltf-model="#zyaguti" scale="8 8 8" position="0 0 0" rotation="0 0 0"
+                 animation-mixer="loop:repeat; timeScale:1.7">
+        </a-entity>
+       </a-marker>
+
+       <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-ana.patt'>
+             <a-entity gltf-model="#ana" scale="8 8 8" position="0 0 -1" rotation="0 0 0"
+                 animation-mixer="loop:repeat; timeScale:1.7">
+        </a-entity>
+       </a-marker>
+
+
+     <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-arm-ana.patt'>
+           <a-entity gltf-model="#arm-ana" scale="8 8 8" position="0 0 -1" rotation="0 0 0"
+               animation-mixer="loop:repeat; timeScale:1.7">
+      </a-entity>
+     </a-marker>
+     <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-arm-asi.patt'>
+           <a-entity gltf-model="#arm-asi" scale="8 8 8" position="0 0 0" rotation="0 0 0"
+               animation-mixer="loop:repeat; timeScale:1.7">
+      </a-entity>
+     </a-marker>
+
+
+     <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-asi.patt'>
+           <a-entity gltf-model="#asi" scale="8 8 8" position="0 0 0" rotation="0 0 0"
+               animation-mixer="loop:repeat; timeScale:1.7">
+      </a-entity>
+     </a-marker>
+
+
+     <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-taiya.patt'>
+           <a-entity gltf-model="#taiya" scale="8 8 8" position="-0.5 0 0" rotation="0 0 0"
+               animation-mixer="loop:repeat; timeScale:1.7">
+      </a-entity>
+     </a-marker>
+
+
+
+     <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-tensi-ana.patt'>
+           <a-entity gltf-model="#tensi-ana" scale="8 8 8" position="0 0 -1" rotation="0 0 0"
+               animation-mixer="loop:repeat; timeScale:1.7">
+      </a-entity>
+     </a-marker>
+     <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-tensi-asi.patt'>
+           <a-entity gltf-model="#tensi-asi" scale="8 8 8" position="0 0 0" rotation="0 0 0"
+               animation-mixer="loop:repeat; timeScale:1.7">
+      </a-entity>
+     </a-marker>
+     <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-tensi.patt'>
+           <a-entity gltf-model="#tensi" scale="8 8 8" position="0 0 0" rotation="0 0 0"
+               animation-mixer="loop:repeat; timeScale:1.7">
+      </a-entity>
+     </a-marker>
+
+
+     <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-antena.patt'>
+           <a-entity gltf-model="#antena" scale="8 8 8" position="0 0 0" rotation="0 0 0"
+               animation-mixer="loop:repeat; timeScale:1.7">
+      </a-entity>
+     </a-marker>
+     <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-antena-asi.patt'>
+           <a-entity gltf-model="#antena-asi" scale="8 8 8" position="0 0 0" rotation="0 0 0"
+               animation-mixer="loop:repeat; timeScale:1.7">
+      </a-entity>
+     </a-marker>
+     <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-antena-taiya.patt'>
+           <a-entity gltf-model="#antena-taiya" scale="8 8 8" position="-0.5 0 0" rotation="0 0 0"
+               animation-mixer="loop:repeat; timeScale:1.7">
+      </a-entity>
+     </a-marker>
+     <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-antena-zyaguti.patt'>
+           <a-entity gltf-model="#antena-ziaguti" scale="8 8 8" position="0 0 0" rotation="0 0 0"
+               animation-mixer="loop:repeat; timeScale:1.7">
+      </a-entity>
+     </a-marker>
+
+
+     <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-kuki.patt'>
+           <a-entity gltf-model="#kuki" scale="8 8 8" position="0 0 0" rotation="0 0 0"
+               animation-mixer="loop:repeat; timeScale:1.7">
+      </a-entity>
+     </a-marker>
+     <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-kuki-asi.patt'>
+           <a-entity gltf-model="#kuki-asi" scale="8 8 8" position="0 0 0" rotation="0 0 0"
+               animation-mixer="loop:repeat; timeScale:1.7">
+      </a-entity>
+     </a-marker>
+
+
+     <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-ongaku.patt'>
+           <a-entity gltf-model="#ongaku" scale="8 8 8" position="0 0 0" rotation="0 0 0"
+               animation-mixer="loop:repeat; timeScale:1.7">
+      </a-entity>
+     </a-marker>
+     <a-marker preset="custom" type="pattern" url='/marker/haco/pattern-ongaku-asi.patt'>
+           <a-entity gltf-model="#ongaku-asi" scale="8 8 8" position="0 0 0" rotation="0 0 0"
+               animation-mixer="loop:repeat; timeScale:1.7">
+      </a-entity>
+     </a-marker>
+
+      <a-light type="ambient" color="#ffffff"></a-light>
+     <a-light type="point" intensity="5" position="0 0 0"></a-light>
+      <!-- カメラ -->
+      <a-entity camera>
+      </a-entity>
+      </a-scene>
+      <script>
+        document.querySelector("a-scene").renderer.gammaInput = true;
+      </script>
+  </body>
+</html>
